@@ -1,0 +1,108 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Mandrill": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "email": "nodeqa1752843099216@email.test",
+                      "status": "rejected",
+                      "_id": "637b1259ec3447fc9596015dbba765e6",
+                      "reject_reason": "unsigned",
+                      "queued_reason": null
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Mandrill1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "email": "nodeqa1752843099799@email.test",
+                      "status": "rejected",
+                      "_id": "f805ce7d7e8a4f0ea8167e8ec8c99a33",
+                      "reject_reason": "unsigned",
+                      "queued_reason": null
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "Mandrill1"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

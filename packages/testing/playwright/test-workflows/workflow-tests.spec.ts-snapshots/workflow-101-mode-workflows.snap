@@ -1,0 +1,132 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Set": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "name": "test",
+                      "toBeRenamed": "name"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Rename Keys": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "Set"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "name": "test",
+                      "Renamed": "name"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Function": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "Rename Keys"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "name": "test",
+                      "Renamed": "name"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    },
+                    "index": 0
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "Function"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

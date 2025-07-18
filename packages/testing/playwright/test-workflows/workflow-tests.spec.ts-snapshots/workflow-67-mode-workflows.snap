@@ -1,0 +1,1174 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "archived": false,
+                      "color": 1,
+                      "created_ts": 1752843150,
+                      "creator": 511904,
+                      "default_groups": [],
+                      "default_recipients": [],
+                      "description": "",
+                      "filters": {
+                        "filter_closed": "only_open"
+                      },
+                      "icon": 0,
+                      "id": 799730,
+                      "is_favorited": false,
+                      "name": "TestChannel1752843149715",
+                      "public": false,
+                      "use_default_recipients": false,
+                      "user_ids": [
+                        511904
+                      ],
+                      "version": 0,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist4": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "actions": [],
+                      "attachments": [],
+                      "content": "Message 1752843150158",
+                      "conversation_id": 1067233,
+                      "creator": 511904,
+                      "creator_name": "nodeqa",
+                      "deleted": false,
+                      "direct_group_mentions": [],
+                      "direct_mentions": [],
+                      "id": 103851783,
+                      "last_edited_ts": null,
+                      "obj_index": 3190,
+                      "posted_ts": 1752843150,
+                      "reactions": {},
+                      "system_message": null,
+                      "version": 0,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist13": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "Twist"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "actions": [],
+                      "attachments": [],
+                      "channel_id": 799730,
+                      "closed": false,
+                      "comment_count": 0,
+                      "content": "test",
+                      "creator": 511904,
+                      "creator_name": "nodeqa",
+                      "direct_group_mentions": [],
+                      "direct_mentions": [],
+                      "groups": [
+                        1
+                      ],
+                      "id": 7128994,
+                      "in_inbox": false,
+                      "is_archived": true,
+                      "is_saved": false,
+                      "last_comment": null,
+                      "last_edited_ts": null,
+                      "last_obj_index": -1,
+                      "last_updated_ts": 1752843151,
+                      "muted_until_ts": null,
+                      "participants": [
+                        511904
+                      ],
+                      "pinned": false,
+                      "pinned_ts": null,
+                      "posted_ts": 1752843151,
+                      "reactions": {},
+                      "recipients": [],
+                      "responders": [
+                        511904
+                      ],
+                      "snippet": "test",
+                      "snippet_creator": 511904,
+                      "snippet_mask_avatar_url": null,
+                      "snippet_mask_poster": null,
+                      "starred": false,
+                      "system_message": null,
+                      "title": "Thread1752843150532",
+                      "to_emails": [],
+                      "version": 0,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist9": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 4,
+            "source": [
+              {
+                "previousNode": "Twist4"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "actions": [],
+                      "attachments": [],
+                      "content": "Message 1752843150158",
+                      "conversation_id": 1067233,
+                      "creator": 511904,
+                      "creator_name": "nodeqa",
+                      "deleted": false,
+                      "direct_group_mentions": [],
+                      "direct_mentions": [],
+                      "id": 103851783,
+                      "last_edited_ts": null,
+                      "obj_index": 3190,
+                      "posted_ts": 1752843150,
+                      "reactions": {},
+                      "system_message": null,
+                      "version": 0,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist18": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 5,
+            "source": [
+              {
+                "previousNode": "Twist13"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "actions": [],
+                      "attachments": [],
+                      "channel_id": 799730,
+                      "content": "Comment1752843151085",
+                      "creator": 511904,
+                      "creator_name": "nodeqa",
+                      "deleted": false,
+                      "deleted_by": null,
+                      "direct_group_mentions": [],
+                      "direct_mentions": [],
+                      "groups": [
+                        1
+                      ],
+                      "id": 97721531,
+                      "last_edited_ts": null,
+                      "obj_index": 0,
+                      "posted_ts": 1752843151,
+                      "reactions": {},
+                      "recipients": [],
+                      "system_message": null,
+                      "thread_id": 7128994,
+                      "to_emails": [],
+                      "version": 0,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist10": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 6,
+            "source": [
+              {
+                "previousNode": "Twist9"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "actions": [],
+                      "attachments": [],
+                      "content": "Message 1752843150158",
+                      "conversation_id": 1067233,
+                      "creator": 511904,
+                      "creator_name": "nodeqa",
+                      "deleted": false,
+                      "direct_group_mentions": [],
+                      "direct_mentions": [],
+                      "id": 103851783,
+                      "last_edited_ts": null,
+                      "obj_index": 3190,
+                      "posted_ts": 1752843150,
+                      "reactions": {},
+                      "system_message": null,
+                      "version": 0,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist19": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 7,
+            "source": [
+              {
+                "previousNode": "Twist18"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "actions": [],
+                      "attachments": [],
+                      "channel_id": 799730,
+                      "content": "Comment1752843151085",
+                      "creator": 511904,
+                      "creator_name": "nodeqa",
+                      "deleted": false,
+                      "deleted_by": null,
+                      "direct_group_mentions": [],
+                      "direct_mentions": [],
+                      "groups": [
+                        1
+                      ],
+                      "id": 97721531,
+                      "last_edited_ts": null,
+                      "obj_index": 0,
+                      "posted_ts": 1752843151,
+                      "reactions": {},
+                      "recipients": [],
+                      "system_message": null,
+                      "thread_id": 7128994,
+                      "to_emails": [],
+                      "version": 0,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist11": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 8,
+            "source": [
+              {
+                "previousNode": "Twist10"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "actions": [
+                        {
+                          "action": "open_url",
+                          "button_text": "community ?",
+                          "type": "action",
+                          "url": "http://community.n8n.io"
+                        }
+                      ],
+                      "attachments": [],
+                      "content": "Message 1752843150158",
+                      "conversation_id": 1067233,
+                      "creator": 511904,
+                      "creator_name": "nodeqa",
+                      "deleted": false,
+                      "direct_group_mentions": [],
+                      "direct_mentions": [],
+                      "id": 103851783,
+                      "last_edited_ts": null,
+                      "obj_index": 3190,
+                      "posted_ts": 1752843150,
+                      "reactions": {},
+                      "system_message": null,
+                      "version": 1,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist20": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 9,
+            "source": [
+              {
+                "previousNode": "Twist19"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "actions": [],
+                      "attachments": [],
+                      "channel_id": 799730,
+                      "content": "Updated Content",
+                      "creator": 511904,
+                      "creator_name": "nodeqa",
+                      "deleted": false,
+                      "deleted_by": null,
+                      "direct_group_mentions": [],
+                      "direct_mentions": [],
+                      "groups": [
+                        1
+                      ],
+                      "id": 97721531,
+                      "last_edited_ts": 1752843152,
+                      "obj_index": 0,
+                      "posted_ts": 1752843151,
+                      "reactions": {},
+                      "recipients": [],
+                      "system_message": null,
+                      "thread_id": 7128994,
+                      "to_emails": [],
+                      "version": 1,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist12": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 10,
+            "source": [
+              {
+                "previousNode": "Twist11"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "status": "ok"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist21": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 11,
+            "source": [
+              {
+                "previousNode": "Twist20"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "actions": [],
+                      "attachments": [],
+                      "channel_id": 799730,
+                      "content": "Updated Content",
+                      "creator": 511904,
+                      "creator_name": "nodeqa",
+                      "deleted": false,
+                      "deleted_by": null,
+                      "direct_group_mentions": [],
+                      "direct_mentions": [],
+                      "groups": [
+                        1
+                      ],
+                      "id": 97721531,
+                      "last_edited_ts": 1752843152,
+                      "obj_index": 0,
+                      "posted_ts": 1752843151,
+                      "reactions": {},
+                      "recipients": [],
+                      "system_message": null,
+                      "thread_id": 7128994,
+                      "to_emails": [],
+                      "version": 1,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist22": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 12,
+            "source": [
+              {
+                "previousNode": "Twist21"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "status": "ok"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist14": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 13,
+            "source": [
+              {
+                "previousNode": "Twist22"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "actions": [],
+                      "attachments": [],
+                      "channel_id": 799730,
+                      "closed": false,
+                      "comment_count": 1,
+                      "content": "test",
+                      "creator": 511904,
+                      "creator_name": "nodeqa",
+                      "direct_group_mentions": [],
+                      "direct_mentions": [],
+                      "groups": [
+                        1
+                      ],
+                      "id": 7128994,
+                      "in_inbox": false,
+                      "is_archived": true,
+                      "is_saved": false,
+                      "last_comment": {
+                        "actions": [],
+                        "attachments": [],
+                        "channel_id": 799730,
+                        "content": "-",
+                        "creator": 511904,
+                        "creator_name": "nodeqa",
+                        "deleted": true,
+                        "deleted_by": 511904,
+                        "direct_group_mentions": [],
+                        "direct_mentions": [],
+                        "groups": [
+                          1
+                        ],
+                        "id": 97721531,
+                        "last_edited_ts": 1752843152,
+                        "obj_index": 0,
+                        "posted_ts": 1752843151,
+                        "reactions": {},
+                        "recipients": [],
+                        "system_message": null,
+                        "thread_id": 7128994,
+                        "to_emails": [],
+                        "version": 2,
+                        "workspace_id": 164330
+                      },
+                      "last_edited_ts": null,
+                      "last_obj_index": 0,
+                      "last_updated_ts": 1752843151,
+                      "muted_until_ts": null,
+                      "participants": [
+                        511904
+                      ],
+                      "pinned": false,
+                      "pinned_ts": null,
+                      "posted_ts": 1752843151,
+                      "reactions": {},
+                      "recipients": [],
+                      "responders": [
+                        511904
+                      ],
+                      "snippet": "test",
+                      "snippet_creator": 511904,
+                      "snippet_mask_avatar_url": null,
+                      "snippet_mask_poster": null,
+                      "starred": false,
+                      "system_message": null,
+                      "title": "Thread1752843150532",
+                      "to_emails": [],
+                      "version": 3,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist15": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 14,
+            "source": [
+              {
+                "previousNode": "Twist14"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "actions": [],
+                      "attachments": [],
+                      "channel_id": 799730,
+                      "closed": false,
+                      "comment_count": 1,
+                      "content": "Updated Content",
+                      "creator": 511904,
+                      "creator_name": "nodeqa",
+                      "direct_group_mentions": [],
+                      "direct_mentions": [],
+                      "groups": [
+                        1
+                      ],
+                      "id": 7128994,
+                      "in_inbox": false,
+                      "is_archived": true,
+                      "is_saved": false,
+                      "last_comment": {
+                        "actions": [],
+                        "attachments": [],
+                        "channel_id": 799730,
+                        "content": "-",
+                        "creator": 511904,
+                        "creator_name": "nodeqa",
+                        "deleted": true,
+                        "deleted_by": 511904,
+                        "direct_group_mentions": [],
+                        "direct_mentions": [],
+                        "groups": [
+                          1
+                        ],
+                        "id": 97721531,
+                        "last_edited_ts": 1752843152,
+                        "obj_index": 0,
+                        "posted_ts": 1752843151,
+                        "reactions": {},
+                        "recipients": [],
+                        "system_message": null,
+                        "thread_id": 7128994,
+                        "to_emails": [],
+                        "version": 2,
+                        "workspace_id": 164330
+                      },
+                      "last_edited_ts": 1752843153,
+                      "last_obj_index": 0,
+                      "last_updated_ts": 1752843151,
+                      "muted_until_ts": null,
+                      "participants": [
+                        511904
+                      ],
+                      "pinned": false,
+                      "pinned_ts": null,
+                      "posted_ts": 1752843151,
+                      "reactions": {},
+                      "recipients": [],
+                      "responders": [
+                        511904
+                      ],
+                      "snippet": "test",
+                      "snippet_creator": 511904,
+                      "snippet_mask_avatar_url": null,
+                      "snippet_mask_poster": null,
+                      "starred": false,
+                      "system_message": null,
+                      "title": "Thread1752843150532",
+                      "to_emails": [],
+                      "version": 4,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist17": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 15,
+            "source": [
+              {
+                "previousNode": "Twist15"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "actions": [],
+                      "attachments": [],
+                      "channel_id": 799730,
+                      "closed": false,
+                      "comment_count": 1,
+                      "content": "Updated Content",
+                      "creator": 511904,
+                      "creator_name": "nodeqa",
+                      "direct_group_mentions": [],
+                      "direct_mentions": [],
+                      "groups": [
+                        1
+                      ],
+                      "id": 7128994,
+                      "in_inbox": false,
+                      "is_archived": true,
+                      "is_saved": false,
+                      "last_comment": {
+                        "actions": [],
+                        "attachments": [],
+                        "channel_id": 799730,
+                        "content": "-",
+                        "creator": 511904,
+                        "creator_name": "nodeqa",
+                        "deleted": true,
+                        "deleted_by": 511904,
+                        "direct_group_mentions": [],
+                        "direct_mentions": [],
+                        "groups": [
+                          1
+                        ],
+                        "id": 97721531,
+                        "last_edited_ts": 1752843152,
+                        "obj_index": 0,
+                        "posted_ts": 1752843151,
+                        "reactions": {},
+                        "recipients": [],
+                        "system_message": null,
+                        "thread_id": 7128994,
+                        "to_emails": [],
+                        "version": 2,
+                        "workspace_id": 164330
+                      },
+                      "last_edited_ts": 1752843153,
+                      "last_obj_index": 0,
+                      "last_updated_ts": 1752843151,
+                      "muted_until_ts": null,
+                      "participants": [
+                        511904
+                      ],
+                      "pinned": false,
+                      "pinned_ts": null,
+                      "posted_ts": 1752843151,
+                      "reactions": {},
+                      "recipients": [],
+                      "responders": [
+                        511904
+                      ],
+                      "snippet": "Updated Content",
+                      "snippet_creator": 511904,
+                      "snippet_mask_avatar_url": null,
+                      "snippet_mask_poster": null,
+                      "starred": false,
+                      "system_message": null,
+                      "title": "Thread1752843150532",
+                      "to_emails": [],
+                      "version": 4,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist16": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 16,
+            "source": [
+              {
+                "previousNode": "Twist17"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "status": "ok"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 17,
+            "source": [
+              {
+                "previousNode": "Twist16"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "archived": false,
+                      "color": 1,
+                      "created_ts": 1752843150,
+                      "creator": 511904,
+                      "default_groups": [],
+                      "default_recipients": [],
+                      "description": "",
+                      "filters": {
+                        "filter_closed": "only_open"
+                      },
+                      "icon": 0,
+                      "id": 799730,
+                      "is_favorited": false,
+                      "name": "UpdatedChannel1752843153642",
+                      "public": false,
+                      "use_default_recipients": false,
+                      "user_ids": [
+                        511904
+                      ],
+                      "version": 1,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist2": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 18,
+            "source": [
+              {
+                "previousNode": "Twist1"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "archived": false,
+                      "color": 1,
+                      "created_ts": 1752843150,
+                      "creator": 511904,
+                      "default_groups": [],
+                      "default_recipients": [],
+                      "description": "",
+                      "filters": {
+                        "filter_closed": "only_open"
+                      },
+                      "icon": 0,
+                      "id": 799730,
+                      "is_favorited": false,
+                      "name": "UpdatedChannel1752843153642",
+                      "public": false,
+                      "use_default_recipients": false,
+                      "user_ids": [
+                        511904
+                      ],
+                      "version": 1,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist3": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 19,
+            "source": [
+              {
+                "previousNode": "Twist2"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "archived": false,
+                      "color": 1,
+                      "created_ts": 1614250659,
+                      "creator": 511904,
+                      "default_groups": [],
+                      "default_recipients": [],
+                      "description": "",
+                      "filters": {
+                        "filter_closed": "only_open"
+                      },
+                      "icon": 0,
+                      "id": 437294,
+                      "is_favorited": false,
+                      "name": "General",
+                      "public": true,
+                      "use_default_recipients": false,
+                      "user_ids": [
+                        511904
+                      ],
+                      "version": 0,
+                      "workspace_id": 164330
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist5": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 20,
+            "source": [
+              {
+                "previousNode": "Twist3"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "status": "ok"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist6": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 21,
+            "source": [
+              {
+                "previousNode": "Twist5"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "status": "ok"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist7": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 22,
+            "source": [
+              {
+                "previousNode": "Twist6"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "status": "ok"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Twist8": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 23,
+            "source": [
+              {
+                "previousNode": "Twist7"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "status": "ok"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "Twist8"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

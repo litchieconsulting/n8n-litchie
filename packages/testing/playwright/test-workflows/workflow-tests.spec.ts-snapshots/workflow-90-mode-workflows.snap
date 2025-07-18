@@ -1,0 +1,241 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Date & Time": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "data": "03/03/2021"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Date & Time1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "Date & Time"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "data": "2021/03/03"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Date & Time2": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "Date & Time1"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "data": "March 03 2021"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Date & Time3": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 4,
+            "source": [
+              {
+                "previousNode": "Date & Time2"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "data": "03-03-2021"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Date & Time4": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 5,
+            "source": [
+              {
+                "previousNode": "Date & Time3"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "data": "2021-03-03"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Date & Time5": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 6,
+            "source": [
+              {
+                "previousNode": "Date & Time4"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "data": "1614764492"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Function": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 7,
+            "source": [
+              {
+                "previousNode": "Date & Time5"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "data": "1614764492"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    },
+                    "index": 0
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "Function"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

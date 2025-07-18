@@ -1,0 +1,426 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ConvertKit": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": 1053937,
+                      "name": "ck_field_1053937_testfield08057219962192621",
+                      "key": "testfield0_8057219962192621",
+                      "label": "testField0.8057219962192621"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ConvertKit4": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": 2059113,
+                      "name": "TestForm",
+                      "created_at": "2021-02-22T09:16:09.000Z",
+                      "type": "embed",
+                      "format": "inline",
+                      "embed_js": "https://chipper-musician-5875.kit.com/bec913a630/index.js",
+                      "embed_url": "https://chipper-musician-5875.kit.com/bec913a630",
+                      "archived": false,
+                      "uid": "bec913a630"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ConvertKit1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "ConvertKit"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": 213135,
+                      "name": "ck_field_213135_testfield",
+                      "key": "testfield",
+                      "label": "testField"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ConvertKit5": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 4,
+            "source": [
+              {
+                "previousNode": "ConvertKit4"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": 10809343490,
+                      "state": "inactive",
+                      "created_at": "2025-07-18T12:52:25.000Z",
+                      "source": "API::V3::SubscriptionsController (external)",
+                      "referrer": null,
+                      "subscribable_id": 2059113,
+                      "subscribable_type": "form",
+                      "subscriber": {
+                        "id": 3484485394,
+                        "first_name": null,
+                        "email_address": "fakeemail1752843144994@gmail.com",
+                        "state": "inactive",
+                        "created_at": "2025-07-18T12:52:25.000Z",
+                        "fields": {
+                          "testfield": null,
+                          "testfield0_005136878949802526": null,
+                          "testfield0_3155918389687311": null,
+                          "testfield0_8057219962192621": null
+                        }
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ConvertKit2": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 5,
+            "source": [
+              {
+                "previousNode": "ConvertKit1"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "success": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ConvertKit7": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 6,
+            "source": [
+              {
+                "previousNode": "ConvertKit5"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": 9171808,
+                      "name": "tag1752843146058",
+                      "created_at": "2025-07-18T12:52:26.000Z"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ConvertKit3": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 7,
+            "source": [
+              {
+                "previousNode": "ConvertKit2"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ConvertKit8": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 8,
+            "source": [
+              {
+                "previousNode": "ConvertKit7"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": 2205755,
+                      "name": "tag1613985759319",
+                      "created_at": "2021-02-22T09:22:40.000Z"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ConvertKit9": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 9,
+            "source": [
+              {
+                "previousNode": "ConvertKit8"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": 10809343588,
+                      "state": "active",
+                      "created_at": "2025-07-18T12:52:28.000Z",
+                      "source": "API::V3::SubscriptionsController (external)",
+                      "referrer": null,
+                      "subscribable_id": 9171808,
+                      "subscribable_type": "tag",
+                      "subscriber": {
+                        "id": 3484485394,
+                        "first_name": null,
+                        "email_address": "fakeemail1752843144994@gmail.com",
+                        "state": "inactive",
+                        "created_at": "2025-07-18T12:52:25.000Z",
+                        "fields": {
+                          "testfield": null,
+                          "testfield0_005136878949802526": null,
+                          "testfield0_3155918389687311": null
+                        }
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ConvertKit10": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 10,
+            "source": [
+              {
+                "previousNode": "ConvertKit9"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": [
+                      {
+                        "item": 0,
+                        "input": 0
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ConvertKit11": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 11,
+            "source": [
+              {
+                "previousNode": "ConvertKit10"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": 9171808,
+                      "name": "tag1752843146058",
+                      "created_at": "2025-07-18T12:52:26.000Z"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ConvertKit6": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 12,
+            "source": [
+              {
+                "previousNode": "ConvertKit11"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "ConvertKit6"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

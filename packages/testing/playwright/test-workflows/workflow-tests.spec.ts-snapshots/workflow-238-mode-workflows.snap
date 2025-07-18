@@ -1,0 +1,163 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "When clicking \"Test workflow\"": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "OpenAI Model": [
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "Open AI Instruct",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "response": {
+                        "generations": [
+                          [
+                            {
+                              "text": "2",
+                              "generationInfo": {
+                                "finishReason": "stop",
+                                "logprobs": null
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      "tokenUsage": {
+                        "completionTokens": 1,
+                        "promptTokens": 18,
+                        "totalTokens": 19
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "messages": [
+                        "How much is 1+1? Only provide the numerical answer without any other text.\n\n"
+                      ],
+                      "estimatedTokens": 18,
+                      "options": {
+                        "openai_api_key": {
+                          "lc": 1,
+                          "type": "secret",
+                          "id": [
+                            "OPENAI_API_KEY"
+                          ]
+                        },
+                        "model": "gpt-3.5-turbo-instruct",
+                        "temperature": 0,
+                        "configuration": {
+                          "fetchOptions": {}
+                        },
+                        "timeout": 60000,
+                        "max_retries": 2
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "OpenAI Model",
+                  "runIndex": 0
+                }
+              ]
+            }
+          }
+        ],
+        "Open AI Instruct": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "When clicking \"Test workflow\""
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "text": "2"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "Open AI Instruct"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {
+        "OpenAI Model": [
+          {
+            "subRun": [
+              {
+                "node": "OpenAI Model",
+                "runIndex": 0
+              }
+            ]
+          }
+        ]
+      },
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

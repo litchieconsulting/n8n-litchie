@@ -1,0 +1,661 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda11": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "table-K1_z3jl_HH",
+                      "type": "table",
+                      "tableType": "view",
+                      "href": "https://coda.io/apis/v1/docs/2-5DWWeFZp/tables/table-K1_z3jl_HH",
+                      "browserLink": "https://coda.io/d/_d2-5DWWeFZp#_tutable-K1_z3jl_HH",
+                      "name": "Table View",
+                      "parent": {
+                        "id": "canvas-QnVrZEhl1Y",
+                        "type": "page",
+                        "href": "https://coda.io/apis/v1/docs/2-5DWWeFZp/pages/canvas-QnVrZEhl1Y",
+                        "browserLink": "https://coda.io/d/_d2-5DWWeFZp/_suZEhl1Y",
+                        "name": "TestFile"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda4": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "c-XvglOYNTU8",
+                      "type": "column",
+                      "name": "number",
+                      "href": "https://coda.io/apis/v1/docs/2-5DWWeFZp/tables/grid-lDqTU2W4nP/columns/c-XvglOYNTU8",
+                      "display": true,
+                      "format": {
+                        "useThousandsSeparator": false,
+                        "type": "number",
+                        "isArray": false
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda2": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "f-nyztATalRJ",
+                      "type": "formula",
+                      "href": "https://coda.io/apis/v1/docs/2-5DWWeFZp/formulas/f-nyztATalRJ",
+                      "name": "Test",
+                      "parent": {
+                        "id": "canvas-QnVrZEhl1Y",
+                        "type": "page",
+                        "href": "https://coda.io/apis/v1/docs/2-5DWWeFZp/pages/canvas-QnVrZEhl1Y",
+                        "browserLink": "https://coda.io/d/_d2-5DWWeFZp/_suZEhl1Y",
+                        "name": "TestFile"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 4,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                []
+              ]
+            }
+          }
+        ],
+        "Coda12": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 5,
+            "source": [
+              {
+                "previousNode": "Coda11"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "table-FTj1L0rh08",
+                      "type": "table",
+                      "tableType": "view",
+                      "href": "https://coda.io/apis/v1/docs/2-5DWWeFZp/tables/table-FTj1L0rh08",
+                      "browserLink": "https://coda.io/d/_d2-5DWWeFZp#_tutable-FTj1L0rh08",
+                      "parent": {
+                        "id": "canvas-QnVrZEhl1Y",
+                        "type": "page",
+                        "href": "https://coda.io/apis/v1/docs/2-5DWWeFZp/pages/canvas-QnVrZEhl1Y",
+                        "browserLink": "https://coda.io/d/_d2-5DWWeFZp/_suZEhl1Y",
+                        "name": "TestFile"
+                      },
+                      "parentTable": {
+                        "id": "grid-lDqTU2W4nP",
+                        "type": "table",
+                        "tableType": "table",
+                        "href": "https://coda.io/apis/v1/docs/2-5DWWeFZp/tables/grid-lDqTU2W4nP",
+                        "browserLink": "https://coda.io/d/_d2-5DWWeFZp#_tugrid-lDqTU2W4nP",
+                        "name": "Table 1"
+                      },
+                      "name": "View of Table 1",
+                      "displayColumn": {
+                        "id": "c-XvglOYNTU8",
+                        "type": "column",
+                        "href": "https://coda.io/apis/v1/docs/2-5DWWeFZp/tables/table-FTj1L0rh08/columns/c-XvglOYNTU8"
+                      },
+                      "rowCount": 130,
+                      "createdAt": "2021-02-22T08:40:15.720Z",
+                      "updatedAt": "2021-02-22T08:40:15.720Z",
+                      "viewId": "v-k0w5NxL7Wt",
+                      "sorts": [],
+                      "layout": "masterDetail"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda5": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 6,
+            "source": [
+              {
+                "previousNode": "Coda4"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "c-XvglOYNTU8",
+                      "type": "column",
+                      "name": "number",
+                      "href": "https://coda.io/apis/v1/docs/2-5DWWeFZp/tables/grid-lDqTU2W4nP/columns/c-XvglOYNTU8",
+                      "display": true,
+                      "format": {
+                        "useThousandsSeparator": false,
+                        "type": "number",
+                        "isArray": false
+                      },
+                      "parent": {
+                        "id": "grid-lDqTU2W4nP",
+                        "type": "table",
+                        "tableType": "table",
+                        "href": "https://coda.io/apis/v1/docs/2-5DWWeFZp/tables/grid-lDqTU2W4nP",
+                        "browserLink": "https://coda.io/d/_d2-5DWWeFZp#_tugrid-lDqTU2W4nP",
+                        "name": "Table 1"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda3": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 7,
+            "source": [
+              {
+                "previousNode": "Coda2"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "f-nyztATalRJ",
+                      "type": "formula",
+                      "href": "https://coda.io/apis/v1/docs/2-5DWWeFZp/formulas/f-nyztATalRJ",
+                      "name": "Test",
+                      "value": "",
+                      "parent": {
+                        "id": "canvas-QnVrZEhl1Y",
+                        "type": "page",
+                        "href": "https://coda.io/apis/v1/docs/2-5DWWeFZp/pages/canvas-QnVrZEhl1Y",
+                        "browserLink": "https://coda.io/d/_d2-5DWWeFZp/_suZEhl1Y",
+                        "name": "TestFile"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda13": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 8,
+            "source": [
+              {
+                "previousNode": "Coda12"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "c-XvglOYNTU8",
+                      "type": "column",
+                      "name": "number",
+                      "href": "https://coda.io/apis/v1/docs/2-5DWWeFZp/tables/grid-lDqTU2W4nP/columns/c-XvglOYNTU8",
+                      "display": true,
+                      "format": {
+                        "useThousandsSeparator": false,
+                        "type": "number",
+                        "isArray": false
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda6": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 9,
+            "source": [
+              {
+                "previousNode": "Coda5"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "i-jJORCzRJiH",
+                      "number": 101,
+                      "sum": 0,
+                      "Column 3": ""
+                    },
+                    "pairedItem": [
+                      {
+                        "item": 0
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda14": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 10,
+            "source": [
+              {
+                "previousNode": "Coda13"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "i-jJORCzRJiH",
+                      "number": 101,
+                      "sum": 0,
+                      "Column 3": ""
+                    },
+                    "pairedItem": [
+                      {
+                        "item": 0
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda7": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 11,
+            "source": [
+              {
+                "previousNode": "Coda6"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "i-jJORCzRJiH",
+                      "number": 101,
+                      "sum": 0,
+                      "Column 3": ""
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Set1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 12,
+            "source": [
+              {
+                "previousNode": "Coda14"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "number": 102,
+                      "sum": 0
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Set": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 13,
+            "source": [
+              {
+                "previousNode": "Coda7"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "number": 101,
+                      "sum": 0
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda15": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 14,
+            "source": [
+              {
+                "previousNode": "Set1"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "number": 102,
+                      "sum": 0
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda8": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 15,
+            "source": [
+              {
+                "previousNode": "Set"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "number": 101,
+                      "sum": 0
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda16": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 16,
+            "source": [
+              {
+                "previousNode": "Coda15"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "rowId": "i-jJORCzRJiH",
+                      "columnId": "c-hTB8QwFtUS",
+                      "requestId": "mutate:d01dbf79-d1ed-4feb-bf70-a35711513973"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda10": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 17,
+            "source": [
+              {
+                "previousNode": "Coda8"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "rowId": "i-jJORCzRJiH",
+                      "columnId": "c-hTB8QwFtUS",
+                      "requestId": "mutate:a66627dc-8e87-4833-901a-8f8492e78bdc"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Coda9": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 18,
+            "source": [
+              {
+                "previousNode": "Coda10"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "rowId": "i-jJORCzRJiH",
+                      "columnId": "c-hTB8QwFtUS",
+                      "requestId": "mutate:a66627dc-8e87-4833-901a-8f8492e78bdc"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "Coda9"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

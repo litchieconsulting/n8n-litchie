@@ -1,0 +1,965 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "When clicking \"Test workflow\"": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Simple Memory": [
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "AI Agent",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_memory": [
+                [
+                  {
+                    "json": {
+                      "action": "loadMemoryVariables",
+                      "chatHistory": []
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_memory": [
+                [
+                  {
+                    "json": {
+                      "action": "loadMemoryVariables",
+                      "values": {
+                        "input": "What time is my check-in?",
+                        "system_message": "You are a helpful assistant",
+                        "formatting_instructions": "IMPORTANT: For your response to user, you MUST use the `format_final_json_response` tool with your complete answer formatted according to the required schema. Do not attempt to format the JSON manually - always use this tool. Your response will be rejected if it is not properly formatted through this tool. Only use this tool once you are ready to provide your final answer."
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "Simple Memory",
+                  "runIndex": 0
+                }
+              ]
+            }
+          },
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 6,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "AI Agent",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_memory": [
+                [
+                  {
+                    "json": {
+                      "action": "saveContext",
+                      "chatHistory": [
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain_core",
+                            "messages",
+                            "HumanMessage"
+                          ],
+                          "kwargs": {
+                            "content": "What time is my check-in?",
+                            "additional_kwargs": {},
+                            "response_metadata": {}
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain_core",
+                            "messages",
+                            "AIMessage"
+                          ],
+                          "kwargs": {
+                            "content": "{\"output\":{\"resolution\":\"I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\\n\\n1. Check your confirmation email or booking receipt\\n2. Log in to the relevant website or app where you made the reservation\\n3. Contact the company's customer service directly\\n\\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.\",\"reasoning\":\"The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to.\"}}",
+                            "tool_calls": [],
+                            "invalid_tool_calls": [],
+                            "additional_kwargs": {},
+                            "response_metadata": {}
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain_core",
+                            "messages",
+                            "HumanMessage"
+                          ],
+                          "kwargs": {
+                            "content": "What time is my check-in?",
+                            "additional_kwargs": {},
+                            "response_metadata": {}
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain_core",
+                            "messages",
+                            "AIMessage"
+                          ],
+                          "kwargs": {
+                            "content": "{\"output\":{\"resolution\":\"I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\\n\\n1. Check your confirmation email or booking receipt\\n2. Log in to the relevant website or app where you made the reservation\\n3. Contact the company's customer service directly\\n\\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.\",\"reasoning\":\"The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to.\"}}",
+                            "tool_calls": [],
+                            "invalid_tool_calls": [],
+                            "additional_kwargs": {},
+                            "response_metadata": {}
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_memory": [
+                [
+                  {
+                    "json": {
+                      "action": "saveContext",
+                      "input": {
+                        "input": "What time is my check-in?",
+                        "system_message": "You are a helpful assistant",
+                        "formatting_instructions": "IMPORTANT: For your response to user, you MUST use the `format_final_json_response` tool with your complete answer formatted according to the required schema. Do not attempt to format the JSON manually - always use this tool. Your response will be rejected if it is not properly formatted through this tool. Only use this tool once you are ready to provide your final answer."
+                      },
+                      "output": {
+                        "input": "What time is my check-in?",
+                        "system_message": "You are a helpful assistant",
+                        "formatting_instructions": "IMPORTANT: For your response to user, you MUST use the `format_final_json_response` tool with your complete answer formatted according to the required schema. Do not attempt to format the JSON manually - always use this tool. Your response will be rejected if it is not properly formatted through this tool. Only use this tool once you are ready to provide your final answer.",
+                        "chat_history": [],
+                        "output": {
+                          "resolution": "I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\n\n1. Check your confirmation email or booking receipt\n2. Log in to the relevant website or app where you made the reservation\n3. Contact the company's customer service directly\n\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.",
+                          "reasoning": "The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to."
+                        }
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "Simple Memory",
+                  "runIndex": 1
+                }
+              ]
+            }
+          },
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 8,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "AI Agent1",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_memory": [
+                [
+                  {
+                    "json": {
+                      "action": "loadMemoryVariables",
+                      "chatHistory": [
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain_core",
+                            "messages",
+                            "HumanMessage"
+                          ],
+                          "kwargs": {
+                            "content": "What time is my check-in?",
+                            "additional_kwargs": {},
+                            "response_metadata": {}
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain_core",
+                            "messages",
+                            "AIMessage"
+                          ],
+                          "kwargs": {
+                            "content": "{\"output\":{\"resolution\":\"I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\\n\\n1. Check your confirmation email or booking receipt\\n2. Log in to the relevant website or app where you made the reservation\\n3. Contact the company's customer service directly\\n\\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.\",\"reasoning\":\"The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to.\"}}",
+                            "tool_calls": [],
+                            "invalid_tool_calls": [],
+                            "additional_kwargs": {},
+                            "response_metadata": {}
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_memory": [
+                [
+                  {
+                    "json": {
+                      "action": "loadMemoryVariables",
+                      "values": {
+                        "input": "What time is my check-in?",
+                        "system_message": "You are a helpful assistant",
+                        "formatting_instructions": "IMPORTANT: For your response to user, you MUST use the `format_final_json_response` tool with your complete answer formatted according to the required schema. Do not attempt to format the JSON manually - always use this tool. Your response will be rejected if it is not properly formatted through this tool. Only use this tool once you are ready to provide your final answer."
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "Simple Memory",
+                  "runIndex": 2
+                }
+              ]
+            }
+          },
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 12,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "AI Agent1",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_memory": [
+                [
+                  {
+                    "json": {
+                      "action": "saveContext",
+                      "chatHistory": [
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain_core",
+                            "messages",
+                            "HumanMessage"
+                          ],
+                          "kwargs": {
+                            "content": "What time is my check-in?",
+                            "additional_kwargs": {},
+                            "response_metadata": {}
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain_core",
+                            "messages",
+                            "AIMessage"
+                          ],
+                          "kwargs": {
+                            "content": "{\"output\":{\"resolution\":\"I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\\n\\n1. Check your confirmation email or booking receipt\\n2. Log in to the relevant website or app where you made the reservation\\n3. Contact the company's customer service directly\\n\\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.\",\"reasoning\":\"The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to.\"}}",
+                            "tool_calls": [],
+                            "invalid_tool_calls": [],
+                            "additional_kwargs": {},
+                            "response_metadata": {}
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain_core",
+                            "messages",
+                            "HumanMessage"
+                          ],
+                          "kwargs": {
+                            "content": "What time is my check-in?",
+                            "additional_kwargs": {},
+                            "response_metadata": {}
+                          }
+                        },
+                        {
+                          "lc": 1,
+                          "type": "constructor",
+                          "id": [
+                            "langchain_core",
+                            "messages",
+                            "AIMessage"
+                          ],
+                          "kwargs": {
+                            "content": "{\"output\":{\"resolution\":\"I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\\n\\n1. Check your confirmation email or booking receipt\\n2. Log in to the relevant website or app where you made the reservation\\n3. Contact the company's customer service directly\\n\\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.\",\"reasoning\":\"The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to.\"}}",
+                            "tool_calls": [],
+                            "invalid_tool_calls": [],
+                            "additional_kwargs": {},
+                            "response_metadata": {}
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_memory": [
+                [
+                  {
+                    "json": {
+                      "action": "saveContext",
+                      "input": {
+                        "input": "What time is my check-in?",
+                        "system_message": "You are a helpful assistant",
+                        "formatting_instructions": "IMPORTANT: For your response to user, you MUST use the `format_final_json_response` tool with your complete answer formatted according to the required schema. Do not attempt to format the JSON manually - always use this tool. Your response will be rejected if it is not properly formatted through this tool. Only use this tool once you are ready to provide your final answer."
+                      },
+                      "output": {
+                        "input": "What time is my check-in?",
+                        "system_message": "You are a helpful assistant",
+                        "formatting_instructions": "IMPORTANT: For your response to user, you MUST use the `format_final_json_response` tool with your complete answer formatted according to the required schema. Do not attempt to format the JSON manually - always use this tool. Your response will be rejected if it is not properly formatted through this tool. Only use this tool once you are ready to provide your final answer.",
+                        "chat_history": [
+                          {
+                            "lc": 1,
+                            "type": "constructor",
+                            "id": [
+                              "langchain_core",
+                              "messages",
+                              "HumanMessage"
+                            ],
+                            "kwargs": {
+                              "content": "What time is my check-in?",
+                              "additional_kwargs": {},
+                              "response_metadata": {}
+                            }
+                          },
+                          {
+                            "lc": 1,
+                            "type": "constructor",
+                            "id": [
+                              "langchain_core",
+                              "messages",
+                              "AIMessage"
+                            ],
+                            "kwargs": {
+                              "content": "{\"output\":{\"resolution\":\"I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\\n\\n1. Check your confirmation email or booking receipt\\n2. Log in to the relevant website or app where you made the reservation\\n3. Contact the company's customer service directly\\n\\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.\",\"reasoning\":\"The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to.\"}}",
+                              "tool_calls": [],
+                              "invalid_tool_calls": [],
+                              "additional_kwargs": {},
+                              "response_metadata": {}
+                            }
+                          }
+                        ],
+                        "output": {
+                          "resolution": "I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\n\n1. Check your confirmation email or booking receipt\n2. Log in to the relevant website or app where you made the reservation\n3. Contact the company's customer service directly\n\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.",
+                          "reasoning": "The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to."
+                        }
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "Simple Memory",
+                  "runIndex": 3
+                }
+              ]
+            }
+          }
+        ],
+        "Anthropic Chat Model": [
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "AI Agent",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "response": {
+                        "generations": [
+                          [
+                            {
+                              "text": "I don't have access to your specific check-in time information. To help you with your check-in time, I would need additional information such as:\n\n1. What type of check-in are you referring to? (hotel, flight, appointment, etc.)\n2. Do you have a reservation or booking reference number?\n3. What company or service provider are you checking in with?{\"output\": {\"reasoning\":\"The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to.\",\"resolution\":\"I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\\n\\n1. Check your confirmation email or booking receipt\\n2. Log in to the relevant website or app where you made the reservation\\n3. Contact the company's customer service directly\\n\\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.\"}}",
+                              "generationInfo": {}
+                            }
+                          ]
+                        ]
+                      },
+                      "tokenUsageEstimate": {
+                        "completionTokens": 261,
+                        "promptTokens": 90,
+                        "totalTokens": 351
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "messages": [
+                        "System: You are a helpful assistant\n\nIMPORTANT: For your response to user, you MUST use the `format_final_json_response` tool with your complete answer formatted according to the required schema. Do not attempt to format the JSON manually - always use this tool. Your response will be rejected if it is not properly formatted through this tool. Only use this tool once you are ready to provide your final answer.\nHuman: What time is my check-in?"
+                      ],
+                      "estimatedTokens": 90,
+                      "options": {
+                        "anthropic_api_key": {
+                          "lc": 1,
+                          "type": "secret",
+                          "id": [
+                            "ANTHROPIC_API_KEY"
+                          ]
+                        },
+                        "model": "claude-3-7-sonnet-20250219",
+                        "anthropic_api_url": "https://api.anthropic.com",
+                        "max_tokens": 2048,
+                        "temperature": 1,
+                        "top_k": -1,
+                        "top_p": -1,
+                        "invocation_kwargs": {},
+                        "client_options": {
+                          "fetchOptions": {}
+                        },
+                        "api_key": {
+                          "lc": 1,
+                          "type": "secret",
+                          "id": [
+                            "ANTHROPIC_API_KEY"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "Anthropic Chat Model",
+                  "runIndex": 0
+                }
+              ]
+            }
+          },
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 9,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "AI Agent1",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "response": {
+                        "generations": [
+                          [
+                            {
+                              "text": "I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\n\n1. Check your confirmation email or booking receipt\n2. Log in to the relevant website or app where you made the reservation\n3. Contact the company's customer service directly\n\nIf you could provide more details about what type of check-in you're referring to (hotel, flight, Airbnb, etc.), I might be able to suggest more specific ways to retrieve that information.{\"output\": {\"resolution\":\"I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\\n\\n1. Check your confirmation email or booking receipt\\n2. Log in to the relevant website or app where you made the reservation\\n3. Contact the company's customer service directly\\n\\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.\",\"reasoning\":\"The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to.\"}}",
+                              "generationInfo": {}
+                            }
+                          ]
+                        ]
+                      },
+                      "tokenUsageEstimate": {
+                        "completionTokens": 284,
+                        "promptTokens": 286,
+                        "totalTokens": 570
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "messages": [
+                        "System: You are a helpful assistant\n\nIMPORTANT: For your response to user, you MUST use the `format_final_json_response` tool with your complete answer formatted according to the required schema. Do not attempt to format the JSON manually - always use this tool. Your response will be rejected if it is not properly formatted through this tool. Only use this tool once you are ready to provide your final answer.\nHuman: What time is my check-in?\nAI: {\"output\":{\"resolution\":\"I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\\n\\n1. Check your confirmation email or booking receipt\\n2. Log in to the relevant website or app where you made the reservation\\n3. Contact the company's customer service directly\\n\\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.\",\"reasoning\":\"The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to.\"}}\nHuman: What time is my check-in?"
+                      ],
+                      "estimatedTokens": 286,
+                      "options": {
+                        "anthropic_api_key": {
+                          "lc": 1,
+                          "type": "secret",
+                          "id": [
+                            "ANTHROPIC_API_KEY"
+                          ]
+                        },
+                        "model": "claude-3-7-sonnet-20250219",
+                        "anthropic_api_url": "https://api.anthropic.com",
+                        "max_tokens": 2048,
+                        "temperature": 1,
+                        "top_k": -1,
+                        "top_p": -1,
+                        "invocation_kwargs": {},
+                        "client_options": {
+                          "fetchOptions": {}
+                        },
+                        "api_key": {
+                          "lc": 1,
+                          "type": "secret",
+                          "id": [
+                            "ANTHROPIC_API_KEY"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "Anthropic Chat Model",
+                  "runIndex": 1
+                }
+              ]
+            }
+          }
+        ],
+        "Auto-fixing Output Parser": [
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "AI Agent",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_outputParser": [
+                [
+                  {
+                    "json": {
+                      "action": "parse",
+                      "response": {
+                        "output": {
+                          "resolution": "I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\n\n1. Check your confirmation email or booking receipt\n2. Log in to the relevant website or app where you made the reservation\n3. Contact the company's customer service directly\n\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.",
+                          "reasoning": "The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to."
+                        }
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_outputParser": [
+                [
+                  {
+                    "json": {
+                      "action": "parse",
+                      "text": "{\"output\":{\"reasoning\":\"The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to.\",\"resolution\":\"I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\\n\\n1. Check your confirmation email or booking receipt\\n2. Log in to the relevant website or app where you made the reservation\\n3. Contact the company's customer service directly\\n\\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.\"}}"
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "Auto-fixing Output Parser",
+                  "runIndex": 0
+                }
+              ]
+            }
+          },
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 10,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "AI Agent1",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_outputParser": [
+                [
+                  {
+                    "json": {
+                      "action": "parse",
+                      "response": {
+                        "output": {
+                          "resolution": "I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\n\n1. Check your confirmation email or booking receipt\n2. Log in to the relevant website or app where you made the reservation\n3. Contact the company's customer service directly\n\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.",
+                          "reasoning": "The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to."
+                        }
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_outputParser": [
+                [
+                  {
+                    "json": {
+                      "action": "parse",
+                      "text": "{\"output\":{\"resolution\":\"I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\\n\\n1. Check your confirmation email or booking receipt\\n2. Log in to the relevant website or app where you made the reservation\\n3. Contact the company's customer service directly\\n\\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.\",\"reasoning\":\"The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to.\"}}"
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "Auto-fixing Output Parser",
+                  "runIndex": 1
+                }
+              ]
+            }
+          }
+        ],
+        "Structured Output Parser": [
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 5,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "Auto-fixing Output Parser",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_outputParser": [
+                [
+                  {
+                    "json": {
+                      "action": "parse",
+                      "response": {
+                        "output": {
+                          "resolution": "I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\n\n1. Check your confirmation email or booking receipt\n2. Log in to the relevant website or app where you made the reservation\n3. Contact the company's customer service directly\n\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.",
+                          "reasoning": "The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to."
+                        }
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_outputParser": [
+                [
+                  {
+                    "json": {
+                      "action": "parse",
+                      "text": "{\"output\":{\"reasoning\":\"The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to.\",\"resolution\":\"I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\\n\\n1. Check your confirmation email or booking receipt\\n2. Log in to the relevant website or app where you made the reservation\\n3. Contact the company's customer service directly\\n\\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.\"}}"
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "Structured Output Parser",
+                  "runIndex": 0
+                }
+              ]
+            }
+          },
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 11,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "Auto-fixing Output Parser",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_outputParser": [
+                [
+                  {
+                    "json": {
+                      "action": "parse",
+                      "response": {
+                        "output": {
+                          "resolution": "I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\n\n1. Check your confirmation email or booking receipt\n2. Log in to the relevant website or app where you made the reservation\n3. Contact the company's customer service directly\n\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.",
+                          "reasoning": "The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to."
+                        }
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_outputParser": [
+                [
+                  {
+                    "json": {
+                      "action": "parse",
+                      "text": "{\"output\":{\"resolution\":\"I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\\n\\n1. Check your confirmation email or booking receipt\\n2. Log in to the relevant website or app where you made the reservation\\n3. Contact the company's customer service directly\\n\\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.\",\"reasoning\":\"The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to.\"}}"
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "Structured Output Parser",
+                  "runIndex": 1
+                }
+              ]
+            }
+          }
+        ],
+        "AI Agent": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "When clicking \"Test workflow\""
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": {
+                        "resolution": "I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\n\n1. Check your confirmation email or booking receipt\n2. Log in to the relevant website or app where you made the reservation\n3. Contact the company's customer service directly\n\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.",
+                        "reasoning": "The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to."
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "AI Agent1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 7,
+            "source": [
+              {
+                "previousNode": "AI Agent"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": {
+                        "resolution": "I don't have access to your personal reservation details or booking information. To find your check-in time, you would need to:\n\n1. Check your confirmation email or booking receipt\n2. Log in to the relevant website or app where you made the reservation\n3. Contact the company's customer service directly\n\nIf you could provide more details about what type of check-in you're referring to, I might be able to suggest more specific ways to retrieve that information.",
+                        "reasoning": "The user is asking about a check-in time, but I don't have access to any reservation systems, personal calendars, or booking information. Without specifics about what type of check-in they're referring to (hotel, flight, event, etc.) and without any reservation details or booking references, I cannot provide their check-in time. This is private information that would be stored in specific reservation systems that I don't have access to."
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "AI Agent1"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {
+        "Simple Memory": [
+          {
+            "subRun": [
+              {
+                "node": "Simple Memory",
+                "runIndex": 0
+              }
+            ]
+          },
+          {
+            "subRun": [
+              {
+                "node": "Simple Memory",
+                "runIndex": 1
+              }
+            ]
+          },
+          {
+            "subRun": [
+              {
+                "node": "Simple Memory",
+                "runIndex": 2
+              }
+            ]
+          },
+          {
+            "subRun": [
+              {
+                "node": "Simple Memory",
+                "runIndex": 3
+              }
+            ]
+          }
+        ],
+        "Anthropic Chat Model": [
+          {
+            "subRun": [
+              {
+                "node": "Anthropic Chat Model",
+                "runIndex": 0
+              }
+            ]
+          },
+          {
+            "subRun": [
+              {
+                "node": "Anthropic Chat Model",
+                "runIndex": 1
+              }
+            ]
+          }
+        ],
+        "Structured Output Parser": [
+          {
+            "subRun": [
+              {
+                "node": "Structured Output Parser",
+                "runIndex": 0
+              }
+            ]
+          },
+          {
+            "subRun": [
+              {
+                "node": "Structured Output Parser",
+                "runIndex": 1
+              }
+            ]
+          }
+        ],
+        "Auto-fixing Output Parser": [
+          {
+            "subRun": [
+              {
+                "node": "Auto-fixing Output Parser",
+                "runIndex": 0
+              }
+            ]
+          },
+          {
+            "subRun": [
+              {
+                "node": "Auto-fixing Output Parser",
+                "runIndex": 1
+              }
+            ]
+          }
+        ]
+      },
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

@@ -1,0 +1,244 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "PayPal": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "batch_header": {
+                        "payout_batch_id": "6WJXS62N884RE",
+                        "batch_status": "PENDING",
+                        "sender_batch_header": {
+                          "sender_batch_id": "1752843103872"
+                        }
+                      },
+                      "links": [
+                        {
+                          "href": "https://api.sandbox.paypal.com/v1/payments/payouts/6WJXS62N884RE",
+                          "rel": "self",
+                          "method": "GET",
+                          "encType": "application/json"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "PayPal1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "PayPal"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "payout_item_id": "WDL29NAFK5HK4",
+                      "transaction_status": "PENDING",
+                      "payout_batch_id": "6WJXS62N884RE",
+                      "payout_item": {
+                        "recipient_type": "EMAIL",
+                        "amount": {
+                          "currency": "USD",
+                          "value": "20.00"
+                        },
+                        "receiver": "sb-0ci8p5941871@business.example.com",
+                        "recipient_wallet": "PAYPAL",
+                        "purpose": "GOODS"
+                      },
+                      "links": [
+                        {
+                          "href": "https://api.sandbox.paypal.com/v1/payments/payouts-item/WDL29NAFK5HK4",
+                          "rel": "item",
+                          "method": "GET",
+                          "encType": "application/json"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "PayPal2": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "PayPal1"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "payout_item_id": "WDL29NAFK5HK4",
+                      "transaction_status": "PENDING",
+                      "payout_batch_id": "6WJXS62N884RE",
+                      "sender_batch_id": "1752843103872",
+                      "payout_item": {
+                        "recipient_type": "EMAIL",
+                        "amount": {
+                          "currency": "USD",
+                          "value": "20.00"
+                        },
+                        "receiver": "sb-0ci8p5941871@business.example.com",
+                        "recipient_wallet": "PAYPAL",
+                        "purpose": "GOODS"
+                      },
+                      "links": [
+                        {
+                          "href": "https://api.sandbox.paypal.com/v1/payments/payouts-item/WDL29NAFK5HK4",
+                          "rel": "self",
+                          "method": "GET",
+                          "encType": "application/json"
+                        },
+                        {
+                          "href": "https://api.sandbox.paypal.com/v1/payments/payouts/6WJXS62N884RE",
+                          "rel": "batch",
+                          "method": "GET",
+                          "encType": "application/json"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "PayPal3": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 4,
+            "source": [
+              {
+                "previousNode": "PayPal2"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "payout_item_id": "WDL29NAFK5HK4",
+                      "transaction_status": "PENDING",
+                      "payout_batch_id": "6WJXS62N884RE",
+                      "sender_batch_id": "1752843103872",
+                      "payout_item": {
+                        "recipient_type": "EMAIL",
+                        "amount": {
+                          "currency": "USD",
+                          "value": "20.00"
+                        },
+                        "receiver": "sb-0ci8p5941871@business.example.com",
+                        "recipient_wallet": "PAYPAL",
+                        "purpose": "GOODS"
+                      },
+                      "links": [
+                        {
+                          "href": "https://api.sandbox.paypal.com/v1/payments/payouts-item/WDL29NAFK5HK4",
+                          "rel": "self",
+                          "method": "GET",
+                          "encType": "application/json"
+                        },
+                        {
+                          "href": "https://api.sandbox.paypal.com/v1/payments/payouts/6WJXS62N884RE",
+                          "rel": "batch",
+                          "method": "GET",
+                          "encType": "application/json"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "PayPal3"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

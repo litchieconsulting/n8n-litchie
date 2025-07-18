@@ -1,0 +1,190 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "FunctionItem": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "name": "test",
+                      "indexes": [
+                        1,
+                        2,
+                        3
+                      ],
+                      "subobj": {
+                        "name": "subtest"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Move Binary Data": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "FunctionItem"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    },
+                    "binary": {
+                      "data": {
+                        "mimeType": "application/json",
+                        "fileType": "json",
+                        "fileExtension": "json",
+                        "data": "eyJuYW1lIjoidGVzdCIsImluZGV4ZXMiOlsxLDIsM10sInN1Ym9iaiI6eyJuYW1lIjoic3VidGVzdCJ9fQ==",
+                        "fileSize": "61 B"
+                      }
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Move Binary Data1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "Move Binary Data"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "name": "test",
+                      "indexes": [
+                        1,
+                        2,
+                        3
+                      ],
+                      "subobj": {
+                        "name": "subtest"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    },
+                    "binary": {}
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Function": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 4,
+            "source": [
+              {
+                "previousNode": "Move Binary Data1"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "name": "test",
+                      "indexes": [
+                        1,
+                        2,
+                        3
+                      ],
+                      "subobj": {
+                        "name": "subtest"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    },
+                    "binary": {},
+                    "index": 0
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "Function"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

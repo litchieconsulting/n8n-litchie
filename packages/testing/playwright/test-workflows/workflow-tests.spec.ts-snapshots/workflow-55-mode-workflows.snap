@@ -1,0 +1,181 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Hunter": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "value": "luis@n8n.io",
+                      "type": "personal",
+                      "confidence": 99,
+                      "sources": [
+                        {
+                          "domain": "linkedin.com",
+                          "uri": "https://www.google.com/search?q=site:linkedin.com%20luis%20guzm%C3%A1n%20n8n",
+                          "extracted_on": "2025-01-07",
+                          "last_seen_on": "2025-07-01",
+                          "still_on_page": true
+                        }
+                      ],
+                      "first_name": "Luis",
+                      "last_name": "Guzmán",
+                      "position": "Marketing Director",
+                      "position_raw": "Head of Marketing",
+                      "seniority": "executive",
+                      "department": "marketing",
+                      "linkedin": "https://www.linkedin.com/in/guzmanluis",
+                      "twitter": null,
+                      "phone_number": null,
+                      "verification": {
+                        "date": "2025-06-28",
+                        "status": "valid"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Hunter1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "Hunter"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "first_name": null,
+                      "last_name": null,
+                      "email": null,
+                      "score": null,
+                      "domain": "n8n.io",
+                      "accept_all": null,
+                      "position": null,
+                      "twitter": null,
+                      "linkedin_url": null,
+                      "phone_number": null,
+                      "company": null,
+                      "sources": [],
+                      "verification": {
+                        "date": null,
+                        "status": null
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Hunter2": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "Hunter1"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "status": "valid",
+                      "result": "deliverable",
+                      "_deprecation_notice": "Using result is deprecated, use status instead",
+                      "score": 90,
+                      "email": "nodeqa@n8n.io",
+                      "regexp": true,
+                      "gibberish": false,
+                      "disposable": false,
+                      "webmail": false,
+                      "mx_records": true,
+                      "smtp_server": true,
+                      "smtp_check": true,
+                      "accept_all": false,
+                      "block": false,
+                      "sources": []
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "Hunter2"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

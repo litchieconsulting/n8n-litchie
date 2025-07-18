@@ -1,0 +1,219 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "OpenThesaurus": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": 3913,
+                      "categories": [],
+                      "terms": [
+                        {
+                          "term": "aquatisch"
+                        },
+                        {
+                          "term": "Wasser..."
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  },
+                  {
+                    "json": {
+                      "id": 11705,
+                      "categories": [
+                        "Chemie"
+                      ],
+                      "terms": [
+                        {
+                          "term": "Wasser"
+                        },
+                        {
+                          "term": "Aqua",
+                          "level": "fachsprachlich"
+                        },
+                        {
+                          "term": "H2O",
+                          "level": "fachsprachlich"
+                        },
+                        {
+                          "term": "H₂O",
+                          "level": "fachsprachlich"
+                        },
+                        {
+                          "term": "blaues Gold",
+                          "level": "gehoben"
+                        },
+                        {
+                          "term": "das nasse Element",
+                          "level": "gehoben"
+                        },
+                        {
+                          "term": "kostbares Nass",
+                          "level": "gehoben"
+                        },
+                        {
+                          "term": "Nass",
+                          "level": "gehoben"
+                        },
+                        {
+                          "term": "Quell des Lebens",
+                          "level": "gehoben"
+                        },
+                        {
+                          "term": "kühles Nass",
+                          "level": "umgangssprachlich"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  },
+                  {
+                    "json": {
+                      "id": 8559,
+                      "categories": [],
+                      "terms": [
+                        {
+                          "term": "Harn"
+                        },
+                        {
+                          "term": "Urin"
+                        },
+                        {
+                          "term": "Wasser (in: Wasser lassen)"
+                        },
+                        {
+                          "term": "Pipi",
+                          "level": "umgangssprachlich"
+                        },
+                        {
+                          "term": "Piese",
+                          "level": "derb"
+                        },
+                        {
+                          "term": "Pinke",
+                          "level": "derb"
+                        },
+                        {
+                          "term": "Pisse",
+                          "level": "derb"
+                        },
+                        {
+                          "term": "Seiche",
+                          "level": "derb"
+                        },
+                        {
+                          "term": "Natursekt",
+                          "level": "vulgär"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  },
+                  {
+                    "json": {
+                      "id": 15485,
+                      "categories": [],
+                      "terms": [
+                        {
+                          "term": "Kranwasser"
+                        },
+                        {
+                          "term": "Leitungswasser"
+                        },
+                        {
+                          "term": "Trinkwasser"
+                        },
+                        {
+                          "term": "Wasser"
+                        },
+                        {
+                          "term": "Wasser aus der Leitung"
+                        },
+                        {
+                          "term": "Gänsewein",
+                          "level": "umgangssprachlich"
+                        },
+                        {
+                          "term": "Kraneberger",
+                          "level": "umgangssprachlich"
+                        },
+                        {
+                          "term": "Kranenberger",
+                          "level": "umgangssprachlich"
+                        },
+                        {
+                          "term": "Rohrperle",
+                          "level": "umgangssprachlich"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "OpenThesaurus"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

@@ -1,0 +1,129 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "MessageBird": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "payment": "prepaid",
+                      "type": "dollars",
+                      "amount": 0
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "MessageBird1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "b95de910e6484377b4db14a6eda17f98",
+                      "href": "https://rest.messagebird.com/messages/b95de910e6484377b4db14a6eda17f98",
+                      "direction": "mt",
+                      "type": "sms",
+                      "originator": "4930270504079",
+                      "body": "TestMessage",
+                      "reference": null,
+                      "validity": null,
+                      "gateway": 10,
+                      "typeDetails": {},
+                      "datacoding": "plain",
+                      "mclass": 1,
+                      "scheduledDatetime": null,
+                      "createdDatetime": "2025-07-18T12:52:33+00:00",
+                      "recipients": {
+                        "totalCount": 1,
+                        "totalSentCount": 1,
+                        "totalDeliveredCount": 0,
+                        "totalDeliveryFailedCount": 0,
+                        "items": [
+                          {
+                            "recipient": 4930270504079,
+                            "status": "sent",
+                            "statusDatetime": "2025-07-18T12:52:33+00:00",
+                            "messagePartCount": 1
+                          }
+                        ]
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "MessageBird1"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

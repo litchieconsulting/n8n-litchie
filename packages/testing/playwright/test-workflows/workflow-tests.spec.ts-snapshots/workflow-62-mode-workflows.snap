@@ -1,0 +1,2060 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ProfitWell": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "fd47e958-b607-46be-b5b1-2e87c43dffbf",
+                      "name": "n8nqa",
+                      "currency": "eur",
+                      "timezone": "Europe/Paris"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ProfitWell1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "recurring_revenue": 0,
+                      "date": "2025-07",
+                      "new_recurring_revenue": 0,
+                      "existing_recurring_revenue": 0,
+                      "churned_recurring_revenue": 0,
+                      "churned_recurring_revenue_cancellations": 0,
+                      "churned_recurring_revenue_delinquent": 0,
+                      "upgraded_recurring_revenue": 0,
+                      "downgraded_recurring_revenue": 0,
+                      "reactivated_recurring_revenue": 0,
+                      "active_customers": 0,
+                      "new_customers": 0,
+                      "existing_customers": 0,
+                      "churned_customers": 0,
+                      "churned_customers_cancellations": 0,
+                      "churned_customers_delinquent": 0,
+                      "upgraded_customers": 0,
+                      "downgraded_customers": 0,
+                      "reactivated_customers": 0,
+                      "average_revenue_per_user": 0,
+                      "lifetime_value": null,
+                      "customers_churn_rate": null,
+                      "customers_churn_cancellations_rate": null,
+                      "customers_churn_delinquent_rate": null,
+                      "revenue_churn_rate": null,
+                      "revenue_churn_cancellations_rate": null,
+                      "revenue_churn_delinquent_rate": null,
+                      "revenue_retention_rate": null,
+                      "customers_retention_rate": null,
+                      "downgrade_rate": null,
+                      "upgrade_rate": null,
+                      "growth_rate": null,
+                      "saas_quick_ratio": null,
+                      "converted_recurring_revenue": 0,
+                      "new_trialing_customers": 0,
+                      "existing_trialing_customers": 1,
+                      "churned_trialing_customers": 0,
+                      "converted_customers": 0,
+                      "active_trialing_customers": 1,
+                      "customer_conversion_rate": 0,
+                      "trial_conversion_time": null
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "ProfitWell2": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "ProfitWell1"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "new_recurring_revenue": [
+                        {
+                          "value": 0,
+                          "date": "2025-07-01"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-02"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-03"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-04"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-05"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-06"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-07"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-08"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-09"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-10"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-11"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-12"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-13"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-14"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-15"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-16"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-17"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-18"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-19"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-20"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-21"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-22"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-23"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-24"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-25"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-26"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-27"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-28"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-29"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-30"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-31"
+                        }
+                      ],
+                      "upgraded_recurring_revenue": [
+                        {
+                          "value": 0,
+                          "date": "2025-07-01"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-02"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-03"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-04"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-05"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-06"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-07"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-08"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-09"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-10"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-11"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-12"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-13"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-14"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-15"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-16"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-17"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-18"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-19"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-20"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-21"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-22"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-23"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-24"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-25"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-26"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-27"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-28"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-29"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-30"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-31"
+                        }
+                      ],
+                      "downgraded_recurring_revenue": [
+                        {
+                          "value": 0,
+                          "date": "2025-07-01"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-02"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-03"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-04"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-05"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-06"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-07"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-08"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-09"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-10"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-11"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-12"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-13"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-14"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-15"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-16"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-17"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-18"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-19"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-20"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-21"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-22"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-23"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-24"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-25"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-26"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-27"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-28"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-29"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-30"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-31"
+                        }
+                      ],
+                      "churned_recurring_revenue": [
+                        {
+                          "value": 0,
+                          "date": "2025-07-01"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-02"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-03"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-04"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-05"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-06"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-07"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-08"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-09"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-10"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-11"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-12"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-13"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-14"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-15"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-16"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-17"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-18"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-19"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-20"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-21"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-22"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-23"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-24"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-25"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-26"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-27"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-28"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-29"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-30"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-31"
+                        }
+                      ],
+                      "reactivated_recurring_revenue": [
+                        {
+                          "value": 0,
+                          "date": "2025-07-01"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-02"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-03"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-04"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-05"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-06"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-07"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-08"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-09"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-10"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-11"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-12"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-13"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-14"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-15"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-16"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-17"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-18"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-19"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-20"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-21"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-22"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-23"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-24"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-25"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-26"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-27"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-28"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-29"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-30"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-31"
+                        }
+                      ],
+                      "new_customers": [
+                        {
+                          "date": "2025-07-01",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-02",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-03",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-04",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-05",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-06",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-07",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-08",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-09",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-10",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-11",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-12",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-13",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-14",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-15",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-16",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-17",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-18",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-19",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-20",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-21",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-22",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-23",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-24",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-25",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-26",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-27",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-28",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-29",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-30",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-31",
+                          "value": 0
+                        }
+                      ],
+                      "upgraded_customers": [
+                        {
+                          "value": 0,
+                          "date": "2025-07-01"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-02"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-03"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-04"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-05"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-06"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-07"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-08"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-09"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-10"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-11"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-12"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-13"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-14"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-15"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-16"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-17"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-18"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-19"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-20"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-21"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-22"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-23"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-24"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-25"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-26"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-27"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-28"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-29"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-30"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-31"
+                        }
+                      ],
+                      "downgraded_customers": [
+                        {
+                          "value": 0,
+                          "date": "2025-07-01"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-02"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-03"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-04"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-05"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-06"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-07"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-08"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-09"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-10"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-11"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-12"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-13"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-14"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-15"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-16"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-17"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-18"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-19"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-20"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-21"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-22"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-23"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-24"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-25"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-26"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-27"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-28"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-29"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-30"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-31"
+                        }
+                      ],
+                      "churned_customers": [
+                        {
+                          "value": 0,
+                          "date": "2025-07-01"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-02"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-03"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-04"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-05"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-06"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-07"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-08"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-09"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-10"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-11"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-12"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-13"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-14"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-15"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-16"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-17"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-18"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-19"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-20"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-21"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-22"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-23"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-24"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-25"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-26"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-27"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-28"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-29"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-30"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-31"
+                        }
+                      ],
+                      "reactivated_customers": [
+                        {
+                          "value": 0,
+                          "date": "2025-07-01"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-02"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-03"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-04"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-05"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-06"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-07"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-08"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-09"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-10"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-11"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-12"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-13"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-14"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-15"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-16"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-17"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-18"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-19"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-20"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-21"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-22"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-23"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-24"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-25"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-26"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-27"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-28"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-29"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-30"
+                        },
+                        {
+                          "value": 0,
+                          "date": "2025-07-31"
+                        }
+                      ],
+                      "recurring_revenue": [
+                        {
+                          "date": "2025-07-01",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-02",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-03",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-04",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-05",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-06",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-07",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-08",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-09",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-10",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-11",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-12",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-13",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-14",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-15",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-16",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-17",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-18",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-19",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-20",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-21",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-22",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-23",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-24",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-25",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-26",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-27",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-28",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-29",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-30",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-31",
+                          "value": 0
+                        }
+                      ],
+                      "cumulative_net_new_mrr": [
+                        {
+                          "date": "2025-07-01",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-02",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-03",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-04",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-05",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-06",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-07",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-08",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-09",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-10",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-11",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-12",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-13",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-14",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-15",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-16",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-17",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-18",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-19",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-20",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-21",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-22",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-23",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-24",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-25",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-26",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-27",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-28",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-29",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-30",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-31",
+                          "value": 0
+                        }
+                      ],
+                      "future_churn_mrr": [
+                        {
+                          "date": "2025-07-01",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-02",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-03",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-04",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-05",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-06",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-07",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-08",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-09",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-10",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-11",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-12",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-13",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-14",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-15",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-16",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-17",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-18",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-19",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-20",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-21",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-22",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-23",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-24",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-25",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-26",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-27",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-28",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-29",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-30",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-31",
+                          "value": 0
+                        }
+                      ],
+                      "cumulative_new_trialing_customers": [
+                        {
+                          "date": "2025-07-01",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-02",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-03",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-04",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-05",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-06",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-07",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-08",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-09",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-10",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-11",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-12",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-13",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-14",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-15",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-16",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-17",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-18",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-19",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-20",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-21",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-22",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-23",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-24",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-25",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-26",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-27",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-28",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-29",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-30",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-31",
+                          "value": 0
+                        }
+                      ],
+                      "active_customers": [
+                        {
+                          "date": "2025-07-01",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-02",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-03",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-04",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-05",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-06",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-07",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-08",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-09",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-10",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-11",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-12",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-13",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-14",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-15",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-16",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-17",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-18",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-19",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-20",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-21",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-22",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-23",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-24",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-25",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-26",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-27",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-28",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-29",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-30",
+                          "value": 0
+                        },
+                        {
+                          "date": "2025-07-31",
+                          "value": 0
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "ProfitWell2"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

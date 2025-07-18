@@ -1,0 +1,311 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "When clicking \"Test workflow\"": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "OpenAI Chat Model1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "AI Agent1",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "response": {
+                        "generations": [
+                          [
+                            {
+                              "text": "```json\n{\n    \"action\": \"calculator\",\n    \"action_input\": \"30 + (10002200 / 100)\"\n}\n```",
+                              "generationInfo": {
+                                "finish_reason": "stop"
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      "tokenUsage": {
+                        "completionTokens": 29,
+                        "promptTokens": 573,
+                        "totalTokens": 602
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "messages": "DYNAMIC",
+                      "estimatedTokens": 567,
+                      "options": {
+                        "openai_api_key": {
+                          "lc": 1,
+                          "type": "secret",
+                          "id": [
+                            "OPENAI_API_KEY"
+                          ]
+                        },
+                        "model": "gpt-4o-mini",
+                        "temperature": 0,
+                        "timeout": 60000,
+                        "max_retries": 2,
+                        "configuration": {
+                          "baseURL": "https://api.openai.com/v1",
+                          "fetchOptions": {}
+                        },
+                        "model_kwargs": {}
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "OpenAI Chat Model1",
+                  "runIndex": 0
+                }
+              ]
+            }
+          },
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "AI Agent1",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "response": {
+                        "generations": [
+                          [
+                            {
+                              "text": "```json\n{\n    \"action\": \"Final Answer\",\n    \"action_input\": \"The result of the calculation is 100052.\"\n}\n```",
+                              "generationInfo": {
+                                "finish_reason": "stop"
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      "tokenUsage": {
+                        "completionTokens": 30,
+                        "promptTokens": 685,
+                        "totalTokens": 715
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "messages": "DYNAMIC",
+                      "estimatedTokens": 675,
+                      "options": {
+                        "openai_api_key": {
+                          "lc": 1,
+                          "type": "secret",
+                          "id": [
+                            "OPENAI_API_KEY"
+                          ]
+                        },
+                        "model": "gpt-4o-mini",
+                        "temperature": 0,
+                        "timeout": 60000,
+                        "max_retries": 2,
+                        "configuration": {
+                          "baseURL": "https://api.openai.com/v1",
+                          "fetchOptions": {}
+                        },
+                        "model_kwargs": {}
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "OpenAI Chat Model1",
+                  "runIndex": 1
+                }
+              ]
+            }
+          }
+        ],
+        "Calculator1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "AI Agent1",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_tool": [
+                [
+                  {
+                    "json": {
+                      "response": "100052"
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_tool": [
+                [
+                  {
+                    "json": {
+                      "query": "30 + (10002200 / 100)"
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "Calculator1",
+                  "runIndex": 0
+                }
+              ]
+            }
+          }
+        ],
+        "AI Agent1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "When clicking \"Test workflow\""
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "The result of the calculation is 100052.",
+                      "intermediateSteps": [
+                        {
+                          "action": {
+                            "tool": "calculator",
+                            "toolInput": "30 + (10002200 / 100)",
+                            "log": "```json\n{\n    \"action\": \"calculator\",\n    \"action_input\": \"30 + (10002200 / 100)\"\n}\n```"
+                          },
+                          "observation": "100052"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "AI Agent1"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {
+        "OpenAI Chat Model1": [
+          {
+            "subRun": [
+              {
+                "node": "OpenAI Chat Model1",
+                "runIndex": 0
+              }
+            ]
+          },
+          {
+            "subRun": [
+              {
+                "node": "OpenAI Chat Model1",
+                "runIndex": 1
+              }
+            ]
+          }
+        ],
+        "Calculator1": [
+          {
+            "subRun": [
+              {
+                "node": "Calculator1",
+                "runIndex": 0
+              }
+            ]
+          }
+        ]
+      },
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

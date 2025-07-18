@@ -1,0 +1,432 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Matrix1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "room_id": "!VnYTWVXjHCyyYfwZwv:matrix.org"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Matrix": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "user_id": "@nodeqa:matrix.org",
+                      "is_guest": false,
+                      "device_id": "PLEEGTGUHF"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Matrix6": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "Matrix1"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "event_id": "$WjBDkPboFTCasGaruWPE4uDGxpeN3Osqv3qeNX2c2Ww"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Matrix5": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 4,
+            "source": [
+              {
+                "previousNode": "Matrix1"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "content": {
+                        "displayname": "nodeqa",
+                        "membership": "join"
+                      },
+                      "origin_server_ts": 1752843152406,
+                      "room_id": "!VnYTWVXjHCyyYfwZwv:matrix.org",
+                      "sender": "@nodeqa:matrix.org",
+                      "state_key": "@nodeqa:matrix.org",
+                      "type": "m.room.member",
+                      "unsigned": {
+                        "age": 5852
+                      },
+                      "event_id": "$deIgkH0AQFY6Szg6V-PED67TOBz9B9SAn_LfhiZrSWk",
+                      "user_id": "@nodeqa:matrix.org",
+                      "age": 5852
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Read Binary File": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 5,
+            "source": [
+              {
+                "previousNode": "Matrix1"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "room_id": "!VnYTWVXjHCyyYfwZwv:matrix.org"
+                    },
+                    "binary": {
+                      "data": {
+                        "mimeType": "image/png",
+                        "fileType": "image",
+                        "fileExtension": "png",
+                        "data": "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",
+                        "directory": "/tmp",
+                        "fileName": "n8n-logo.png",
+                        "fileSize": "2.67 kB"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Matrix7": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 6,
+            "source": [
+              {
+                "previousNode": "Matrix6"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "content": {
+                        "body": "Test 1752843157415",
+                        "msgtype": "m.text"
+                      },
+                      "origin_server_ts": 1752843157607,
+                      "room_id": "!VnYTWVXjHCyyYfwZwv:matrix.org",
+                      "sender": "@nodeqa:matrix.org",
+                      "type": "m.room.message",
+                      "unsigned": {
+                        "membership": "join",
+                        "age": 4037,
+                        "transaction_id": "7c4fdb05-8ae5-4861-a69b-8a60e7d114f7"
+                      },
+                      "event_id": "$WjBDkPboFTCasGaruWPE4uDGxpeN3Osqv3qeNX2c2Ww",
+                      "user_id": "@nodeqa:matrix.org",
+                      "age": 4037
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Matrix8": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 7,
+            "source": [
+              {
+                "previousNode": "Read Binary File"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "event_id": "$Z2YWOexPITusNyG3URkLNP10F8DDpTexIpo62qY7_0A"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Matrix2": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 8,
+            "source": [
+              {
+                "previousNode": "Matrix7"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Matrix9": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 9,
+            "source": [
+              {
+                "previousNode": "Matrix8"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "content": {
+                        "body": "n8n-logo.png",
+                        "msgtype": "m.image",
+                        "url": "mxc://matrix.org/ytdJLpxaGyzrRubMhXVKBVvV"
+                      },
+                      "origin_server_ts": 1752843162653,
+                      "room_id": "!VnYTWVXjHCyyYfwZwv:matrix.org",
+                      "sender": "@nodeqa:matrix.org",
+                      "type": "m.room.message",
+                      "unsigned": {
+                        "age": 1082,
+                        "transaction_id": "3c1d5f05-f6b6-4495-a6ec-1030ec9276ab"
+                      },
+                      "event_id": "$Z2YWOexPITusNyG3URkLNP10F8DDpTexIpo62qY7_0A",
+                      "user_id": "@nodeqa:matrix.org",
+                      "age": 1082
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Matrix3": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 10,
+            "source": [
+              {
+                "previousNode": "Matrix2"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Merge": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 11,
+            "source": [
+              {
+                "previousNode": "Matrix3"
+              },
+              {
+                "previousNode": "Matrix9"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Matrix4": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 12,
+            "source": [
+              {
+                "previousNode": "Merge"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "Matrix4"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

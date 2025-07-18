@@ -1,0 +1,440 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Phantombuster": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "8756817235927468",
+                      "name": "Email Extractor",
+                      "createdAt": 1614591862755,
+                      "scriptOrgName": "phantombuster",
+                      "scriptId": "6774",
+                      "script": "Email Extractor.js",
+                      "branch": "master",
+                      "environment": "release",
+                      "manifest": {
+                        "slug": "email-extractor",
+                        "description": "Extract email addresses from any site on the web",
+                        "defaultArgumentAllowed": true,
+                        "defaultArgument": {
+                          "websiteUrls": "https://phantombuster.com",
+                          "timeToWait": 5000
+                        },
+                        "embeddedYouTubeVideo": {
+                          "videoId": "QdsWNnMMknM",
+                          "videoHeader": "Setup demo video"
+                        },
+                        "outputDescription": {
+                          "mails": ""
+                        },
+                        "argumentForm": {
+                          "enabled": true,
+                          "steps": [
+                            {
+                              "slug": "websites-to-scrape",
+                              "title": "Websites to scrape",
+                              "helper": "Tell the Phantom which websites you would like it to scrape.",
+                              "fields": {
+                                "websiteUrls": {
+                                  "label": "Your websites",
+                                  "placeholder": "https://docs.google.com/spreadsheets/d/(...)",
+                                  "helpers": [
+                                    "Give your websites in one of the following formats:",
+                                    "• The URL of a single website.",
+                                    "• The URL of a [Google Sheet](https://support.phantombuster.com/hc/en-us/articles/360014600760-Use-a-spreadsheet-as-input) containing a list of website URLs.",
+                                    "• The URL of a CSV file containing a list of website URLs.",
+                                    "Make sure that the CSV and Google Sheets are publicly accessible."
+                                  ]
+                                },
+                                "leadPropertyName": {
+                                  "label": "Select which websites you would like the Phantom to process",
+                                  "optionLabels": [
+                                    "Lead websites",
+                                    "Company websites"
+                                  ],
+                                  "collapsibleSection": "Advanced settings"
+                                },
+                                "columnName": {
+                                  "label": "Name of column containing websites",
+                                  "helpers": [
+                                    "If you are using a spreadsheet, the Phantom will take the information found in the first column (column A) as input. If the Phantom should use a different column, provide the column’s name above.",
+                                    "[Column names](https://support.phantombuster.com/hc/en-us/articles/360007038220-Specify-input-column) are not A or B, but rather the titles found in row 1 of the column."
+                                  ],
+                                  "placeholder": "Website Link",
+                                  "collapsibleSection": "Spreadsheet settings"
+                                }
+                              }
+                            },
+                            {
+                              "slug": "behavior",
+                              "title": "Behavior",
+                              "fields": {
+                                "timeToWait": {
+                                  "label": "Number of milliseconds to wait before scraping the page",
+                                  "placeholder": "5000",
+                                  "helper": "If left empty, 5000 milliseconds."
+                                },
+                                "pagesPerLaunch": {
+                                  "label": "Number of websites to process per launch",
+                                  "helpers": [
+                                    "This only applies if you are using a spreadsheet or CSV file as input.",
+                                    "If left empty, the Phantom will attempt to process all of them."
+                                  ]
+                                },
+                                "onlyGetOneEmail": {
+                                  "label": "Only scrape one email per website",
+                                  "collapsibleSection": "Advanced settings"
+                                },
+                                "csvName": {
+                                  "label": "Name your results file",
+                                  "helper": "Take note: If you rename your results file at any point between launches, the Phantom will create a new results file and process your inputs from the start again.",
+                                  "placeholder": "result",
+                                  "collapsibleSection": "Results file settings"
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "argumentTypes": {
+                          "websiteUrls": {
+                            "pipe": true,
+                            "types": [
+                              "domainname"
+                            ]
+                          },
+                          "columnName": {
+                            "targetsColumn": {
+                              "pipe": "websiteUrls",
+                              "types": [
+                                "domainname"
+                              ]
+                            }
+                          }
+                        },
+                        "outputTypes": {
+                          "mails": {
+                            "types": [
+                              "email"
+                            ]
+                          }
+                        },
+                        "argumentSchema": {
+                          "type": "object",
+                          "properties": {
+                            "websiteUrls": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "queries": {
+                              "oneOf": [
+                                {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                },
+                                {
+                                  "type": "string"
+                                }
+                              ]
+                            },
+                            "urls": {
+                              "oneOf": [
+                                {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string"
+                                  }
+                                },
+                                {
+                                  "type": "string"
+                                }
+                              ]
+                            },
+                            "leadPropertyName": {
+                              "enum": [
+                                "websites",
+                                "companyWebsite"
+                              ],
+                              "type": "string"
+                            },
+                            "columnName": {
+                              "type": "string"
+                            },
+                            "timeToWait": {
+                              "type": "number",
+                              "minimum": 1,
+                              "default": 5000
+                            },
+                            "pagesPerLaunch": {
+                              "type": "number",
+                              "minimum": 1,
+                              "default": 2
+                            },
+                            "csvName": {
+                              "type": "string"
+                            },
+                            "onlyGetOneEmail": {
+                              "type": "boolean"
+                            }
+                          },
+                          "allOf": [
+                            {
+                              "anyOf": [
+                                {
+                                  "required": [
+                                    "websiteUrls"
+                                  ],
+                                  "ui-required": [
+                                    "websiteUrls"
+                                  ]
+                                },
+                                {
+                                  "required": [
+                                    "urls"
+                                  ],
+                                  "ui-required": [
+                                    "urls"
+                                  ]
+                                },
+                                {
+                                  "required": [
+                                    "queries"
+                                  ],
+                                  "ui-required": [
+                                    "queries"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "if": {
+                                "properties": {
+                                  "websiteUrls": {
+                                    "pattern": "org-storage://"
+                                  }
+                                },
+                                "required": [
+                                  "websiteUrls"
+                                ]
+                              },
+                              "then": {
+                                "ui-hidden": [
+                                  "columnName"
+                                ]
+                              },
+                              "else": {
+                                "ui-hidden": [
+                                  "leadPropertyName"
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        "tags": {
+                          "categories": [
+                            "toolbox",
+                            "mail"
+                          ],
+                          "extractions": [
+                            "emails"
+                          ],
+                          "goals": [
+                            "enrichLeads",
+                            "extractMediaOrData"
+                          ]
+                        },
+                        "featuredRank": 1,
+                        "inputIcon": "url",
+                        "outputIcon": "email",
+                        "defaultSettings": {
+                          "maxParallelism": 1,
+                          "notificationPreset": "error",
+                          "ignoreNotificationPresetForOrgSlugs": [
+                            "phantombuster"
+                          ]
+                        },
+                        "plugins": [
+                          {
+                            "name": "acceptsLeadListAsInput"
+                          }
+                        ],
+                        "usageRank": 74
+                      },
+                      "lastEndType": "finished",
+                      "lastEndedAt": 1752842906130,
+                      "lastExitCode": 0,
+                      "nbContainersRunning": 0,
+                      "runningTime": null,
+                      "launchType": "manually",
+                      "s3Folder": "UKSkFmaigVohTti7pkwW0A"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Phantombuster1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "Phantombuster"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "8756817235927468",
+                      "scriptOrgName": "phantombuster",
+                      "scriptId": "6774",
+                      "script": "Email Extractor.js",
+                      "branch": "master",
+                      "environment": "release",
+                      "argument": "{\n\t\"urls\": [\n\t\t\"https://n8n.io/\"\n\t],\n\t\"timeToWait\": 5000,\n\t\"pagesPerLaunch\": 1,\n\t\"onlyGetOneEmail\": false\n}",
+                      "code": null,
+                      "launchType": "manually",
+                      "nbLaunches": 2775,
+                      "s3Folder": "UKSkFmaigVohTti7pkwW0A",
+                      "orgS3Folder": "sTTpLenO2iY",
+                      "updatedAt": 1614591972895,
+                      "name": "Email Extractor",
+                      "fileMgmt": "mix",
+                      "lastEndType": "finished"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Phantombuster2": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "Phantombuster1"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "containerId": "281414936138753"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Phantombuster3": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 4,
+            "source": [
+              {
+                "previousNode": "Phantombuster2"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "containerId": "281414936138753",
+                      "status": "running",
+                      "output": "",
+                      "outputPos": 0,
+                      "mostRecentEndedAt": "DYNAMIC",
+                      "isAgentRunning": false,
+                      "canSoftAbort": false
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "Phantombuster3"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

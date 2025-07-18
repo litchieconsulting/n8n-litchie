@@ -1,0 +1,166 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "When clicking \"Test workflow\"": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Azure OpenAI Chat Model": [
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "Azure OpenAI Chat",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "response": {
+                        "generations": [
+                          [
+                            {
+                              "text": "2",
+                              "generationInfo": {
+                                "finish_reason": "stop"
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      "tokenUsage": {
+                        "completionTokens": 2,
+                        "promptTokens": 25,
+                        "totalTokens": 27
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "messages": [
+                        "Human: How much is 1+1? Only provide the numerical answer without any other text.\n"
+                      ],
+                      "estimatedTokens": 20,
+                      "options": {
+                        "deployment_name": "gpt4",
+                        "azure_open_ai_api_key": {
+                          "lc": 1,
+                          "type": "secret",
+                          "id": [
+                            "AZURE_OPENAI_API_KEY"
+                          ]
+                        },
+                        "azure_open_ai_api_instance_name": "n8n-ai-us",
+                        "openai_api_version": "2025-03-01-preview",
+                        "azure_endpoint": "https://n8n-ai-us.openai.azure.com/",
+                        "temperature": 0,
+                        "timeout": 60000,
+                        "max_retries": 2,
+                        "configuration": {
+                          "fetchOptions": {}
+                        },
+                        "model_kwargs": {}
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "Azure OpenAI Chat Model",
+                  "runIndex": 0
+                }
+              ]
+            }
+          }
+        ],
+        "Azure OpenAI Chat": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "When clicking \"Test workflow\""
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "text": "2"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "Azure OpenAI Chat"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {
+        "Azure OpenAI Chat Model": [
+          {
+            "subRun": [
+              {
+                "node": "Azure OpenAI Chat Model",
+                "runIndex": 0
+              }
+            ]
+          }
+        ]
+      },
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

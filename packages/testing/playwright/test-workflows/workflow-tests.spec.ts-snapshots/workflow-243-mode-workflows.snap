@@ -1,0 +1,340 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "When clicking \"Test workflow\"": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "OpenAI Chat Model2": [
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 2,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "AI Agent2",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "response": {
+                        "generations": [
+                          [
+                            {
+                              "text": "Question: What is the result of 30 + (10002200 / 100)?\nThought: I need to calculate the division first and then add 30 to the result.\nAction: \n```\n{\n  \"action\": \"calculator\",\n  \"action_input\": \"30 + (10002200 / 100)\"\n}\n```\n",
+                              "generationInfo": {
+                                "finish_reason": "stop"
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      "tokenUsage": {
+                        "completionTokens": 70,
+                        "promptTokens": 301,
+                        "totalTokens": 371
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "messages": "DYNAMIC",
+                      "estimatedTokens": 294,
+                      "options": {
+                        "openai_api_key": {
+                          "lc": 1,
+                          "type": "secret",
+                          "id": [
+                            "OPENAI_API_KEY"
+                          ]
+                        },
+                        "model": "gpt-4o-mini",
+                        "temperature": 0,
+                        "timeout": 60000,
+                        "max_retries": 2,
+                        "configuration": {
+                          "baseURL": "https://api.openai.com/v1",
+                          "fetchOptions": {}
+                        },
+                        "model_kwargs": {}
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "OpenAI Chat Model2",
+                  "runIndex": 0
+                }
+              ]
+            }
+          },
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 4,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "AI Agent2",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "response": {
+                        "generations": [
+                          [
+                            {
+                              "text": "I now know the final answer\nFinal Answer: 100052",
+                              "generationInfo": {
+                                "finish_reason": "stop"
+                              }
+                            }
+                          ]
+                        ]
+                      },
+                      "tokenUsage": {
+                        "completionTokens": 13,
+                        "promptTokens": 401,
+                        "totalTokens": 414
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_languageModel": [
+                [
+                  {
+                    "json": {
+                      "messages": "DYNAMIC",
+                      "estimatedTokens": 394,
+                      "options": {
+                        "openai_api_key": {
+                          "lc": 1,
+                          "type": "secret",
+                          "id": [
+                            "OPENAI_API_KEY"
+                          ]
+                        },
+                        "model": "gpt-4o-mini",
+                        "temperature": 0,
+                        "timeout": 60000,
+                        "max_retries": 2,
+                        "configuration": {
+                          "baseURL": "https://api.openai.com/v1",
+                          "fetchOptions": {}
+                        },
+                        "model_kwargs": {}
+                      }
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "OpenAI Chat Model2",
+                  "runIndex": 1
+                }
+              ]
+            }
+          }
+        ],
+        "Calculator2": [
+          {
+            "startTime": "DYNAMIC",
+            "executionTime": "DYNAMIC",
+            "executionIndex": 3,
+            "executionStatus": "success",
+            "source": [
+              {
+                "previousNode": "AI Agent2",
+                "previousNodeRun": 0
+              }
+            ],
+            "data": {
+              "ai_tool": [
+                [
+                  {
+                    "json": {
+                      "response": "100052"
+                    }
+                  }
+                ]
+              ]
+            },
+            "inputOverride": {
+              "ai_tool": [
+                [
+                  {
+                    "json": {
+                      "query": "30 + (10002200 / 100)"
+                    }
+                  }
+                ]
+              ]
+            },
+            "metadata": {
+              "subRun": [
+                {
+                  "node": "Calculator2",
+                  "runIndex": 0
+                }
+              ]
+            }
+          }
+        ],
+        "AI Agent2": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "When clicking \"Test workflow\""
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "output": "100052",
+                      "intermediateSteps": [
+                        {
+                          "action": {
+                            "tool": "calculator",
+                            "toolInput": "30 + (10002200 / 100)",
+                            "log": "Question: What is the result of 30 + (10002200 / 100)?\nThought: I need to calculate the division first and then add 30 to the result.\nAction: \n```\n{\n  \"action\": \"calculator\",\n  \"action_input\": \"30 + (10002200 / 100)\"\n}\n```\n"
+                          },
+                          "observation": "100052"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Edit Fields2": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 5,
+            "source": [
+              {
+                "previousNode": "AI Agent2"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "calculator_called": true,
+                      "has_correct_output": "true"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "Edit Fields2"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {
+        "OpenAI Chat Model2": [
+          {
+            "subRun": [
+              {
+                "node": "OpenAI Chat Model2",
+                "runIndex": 0
+              }
+            ]
+          },
+          {
+            "subRun": [
+              {
+                "node": "OpenAI Chat Model2",
+                "runIndex": 1
+              }
+            ]
+          }
+        ],
+        "Calculator2": [
+          {
+            "subRun": [
+              {
+                "node": "Calculator2",
+                "runIndex": 0
+              }
+            ]
+          }
+        ]
+      },
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}

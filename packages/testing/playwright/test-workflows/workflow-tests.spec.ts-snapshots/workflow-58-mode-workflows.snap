@@ -1,0 +1,272 @@
+{
+  "data": {
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "Start": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {},
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Todoist": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "Start"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "9361362406",
+                      "assigner_id": null,
+                      "assignee_id": null,
+                      "project_id": "2259097055",
+                      "section_id": null,
+                      "parent_id": null,
+                      "order": 25,
+                      "content": "Test Task",
+                      "description": "",
+                      "is_completed": false,
+                      "labels": [
+                        "TestLabel"
+                      ],
+                      "priority": 1,
+                      "comment_count": 0,
+                      "creator_id": "32694069",
+                      "created_at": "2025-07-18T12:52:26.483142Z",
+                      "due": null,
+                      "url": "https://app.todoist.com/app/task/9361362406",
+                      "duration": null,
+                      "deadline": null
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Todoist1": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "Todoist"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "9361362406",
+                      "assigner_id": null,
+                      "assignee_id": null,
+                      "project_id": "2259097055",
+                      "section_id": null,
+                      "parent_id": null,
+                      "order": 25,
+                      "content": "Test Task",
+                      "description": "",
+                      "is_completed": false,
+                      "labels": [
+                        "TestLabel"
+                      ],
+                      "priority": 1,
+                      "comment_count": 0,
+                      "creator_id": "32694069",
+                      "created_at": "2025-07-18T12:52:26.483142Z",
+                      "due": null,
+                      "url": "https://app.todoist.com/app/task/9361362406",
+                      "duration": null,
+                      "deadline": null
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Todoist2": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "Todoist1"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "success": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Todoist3": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 4,
+            "source": [
+              {
+                "previousNode": "Todoist2"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "success": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Todoist5": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 5,
+            "source": [
+              {
+                "previousNode": "Todoist3"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "id": "4610234385",
+                      "assigner_id": null,
+                      "assignee_id": null,
+                      "project_id": "2259097055",
+                      "section_id": null,
+                      "parent_id": null,
+                      "order": 1,
+                      "content": "Test Task",
+                      "description": "",
+                      "is_completed": false,
+                      "labels": [
+                        "TestLabel"
+                      ],
+                      "priority": 1,
+                      "comment_count": 0,
+                      "creator_id": "32694069",
+                      "created_at": "2021-02-25T12:23:24.274629Z",
+                      "due": null,
+                      "url": "https://app.todoist.com/app/task/4610234385",
+                      "duration": null,
+                      "deadline": null
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "Todoist4": [
+          {
+            "startTime": "DYNAMIC",
+            "executionIndex": 6,
+            "source": [
+              {
+                "previousNode": "Todoist5"
+              }
+            ],
+            "hints": [],
+            "executionTime": "DYNAMIC",
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "success": true
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "Todoist4"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {}
+    }
+  },
+  "mode": "cli",
+  "startedAt": "DYNAMIC",
+  "stoppedAt": "DYNAMIC",
+  "status": "running",
+  "finished": true
+}
