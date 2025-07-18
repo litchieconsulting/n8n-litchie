@@ -1,8 +1,5 @@
-FROM n8nio/n8n
+FROM docker.n8n.io/n8nio/n8n
 
-WORKDIR /home/node/
-
-ENV TZ=Europe/Brussels
 ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=estelle
 ENV N8N_BASIC_AUTH_PASSWORD=yourStrongPassword
@@ -11,5 +8,6 @@ ENV N8N_PORT=5678
 ENV N8N_PROTOCOL=http
 ENV DB_TYPE=postgresdb
 ENV DB_POSTGRESDB_PORT=5432
+ENV TZ=Europe/Brussels
 
 CMD ["n8n"]
